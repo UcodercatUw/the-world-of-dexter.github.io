@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/dexterlogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Декстера | Информационный сайт о сериале</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- Логотип -->
+                <a class="navbar-brand" href="#home">
+                    <img src="img/dexterlogo.png" alt="Логотип Декстера" width="70" height="50" class="me-2">
+                </a>
+                
+                <!-- Мобильное меню -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Навигационные ссылки -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">О сериале</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#characters">Персонажи</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#series">Сериалы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langSelector" data-bs-toggle="dropdown">RU</a>
+                             <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="index.html">Русский</a></li>
+                                    <li><a class="dropdown-item" href="index-en.html">English</a></li>
+                                    <li><a class="dropdown-item" href="index-ee.html">Eesti</a></li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Главный баннер -->
+        <section id="home" class="hero-banner">
+            <div class="hero-overlay">
+                <div class="container hero-content">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h1 class="display-2 fw-bold mb-4"> <img src="img/dexterlogo.png" alt="Логотип Декстера" width="200" height="150" class="me-2"></h1>
+                            <p class="lead fs-3 mb-4">Тёмная сторона правосудия</p>
+                            <p class="fs-5 mb-5">Сериал, который изменил представление о супергероях и злодеях</p>
+                            <a href="#about" class="btn btn-danger btn-lg px-5 py-3">Исследовать мир Декстера</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "О сериале" -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <h2 class="text-center section-title mb-4">Легенда телевидения</h2>
+                        <div class="about-text">
+                            <p class="fs-5">
+                                <strong>"Декстер"</strong> — революционный телесериал в жанре психологического триллера, 
+                                который на протяжении восьми лет держал в напряжении миллионы зрителей по всему миру. 
+                                Уникальный сюжет о серийном убийце, который убивает других убийц, бросил вызов 
+                                традиционным представлениям о добре и зле, героях и антигероях.
+                            </p>
+                            <p class="fs-5">
+                                Сериал основан на романах Джеффа Линдсея и стал одним из самых обсуждаемых 
+                                телевизионных проектов 2000-х годов, получив признание критиков и множество наград, 
+                                включая премию "Золотой глобус".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Статистика -->
+                <div class="row stats-row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Сезонов</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">96</div>
+                            <div class="stat-label">Эпизодов</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">8.6</div>
+                            <div class="stat-label"><small>Оценка</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">24+</div>
+                            <div class="stat-label">Наград</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Персонажи" -->
+        <section id="characters" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Персонажи</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Декстер Морган -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/dexter morgan.jpg" class="card-img-top" alt="Декстер Морган">
+                            <div class="card-body">
+                                <h5 class="card-title">Декстер Морган</h5>
+                                <p class="card-text">
+                                    Главный герой, судмедэксперт полиции Майами, ведущий двойную жизнь серийного убийцы, 
+                                    который уничтожает преступников, избежавших правосудия.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Майкл С. Холл</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Дебра Морган -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/debra morgan.jpg" class="card-img-top" alt="Дебра Морган">
+                            <div class="card-body">
+                                <h5 class="card-title">Дебра Морган</h5>
+                                <p class="card-text">
+                                    Сестра Декстера, детектив полиции Майами. Амбициозна, эмоциональна и полностью 
+                                    предана работе, не подозревая о тёмной стороне брата.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Дженнифер Карпентер</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Гарри Морган -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/harry morgan.jpg" class="card-img-top" alt="Гарри Морган">
+                            <div class="card-body">
+                                <h5 class="card-title">Гарри Морган</h5>
+                                <p class="card-text">
+                                    Коп, приемный отец Декстера, направивший его 
+                                    безумие в определенное русло, 
+                                    оформленное как "Кодекс Гарри".
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Джеймс Римар</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Энжел Батиста -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/angel batista.jpg" class="card-img-top" alt="Энжел Батыста">
+                            <div class="card-body">
+                                <h5 class="card-title">Энжел Батиста</h5>
+                                <p class="card-text">
+                                    Детектив убойного отдела, работающий вместе с Декстером и Деброй. 
+                                    Честен, женат и несчастен в браке.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Дэвид Зайас</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Винс Масука -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/vince masuka.jpg" class="card-img-top" alt="Винс Масука">
+                            <div class="card-body">
+                                <h5 class="card-title">Винс Масука</h5>
+                                <p class="card-text">
+                                    Судмедэксперт, коллега Декстера. Любитель пошлых шуток, 
+                                    не встречающих понимания у окружающих, 
+                                    к своей работе и исследованиям он относится крайне серьезно.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">C. S. Lee</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Джеймс Доакс -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/james doakes.jpg" class="card-img-top" alt="Джеймс Доакс">
+                            <div class="card-body">
+                                <h5 class="card-title">Джеймс Доакс</h5>
+                                <p class="card-text">
+                                    Сержант убойного отдела, старый друг ЛаГуэрты. 
+                                    Единственный коп, испытывавший открытую неприязнь и 
+                                    недоверие к Декстеру.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Эрик Кинг</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Мария ЛаГуэрта -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/maria laguerta.jpg" class="card-img-top" alt="Мария ЛаГуэрта">
+                            <div class="card-body">
+                                <h5 class="card-title">Мария ЛаГуэрта</h5>
+                                <p class="card-text">
+                                    Капитан убойного отдела, ведущий расследования многих убийств. Хороший дипломат, 
+                                    активно использующий медиа и связи в кубинской общине в карьерных целях.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Лорен Велес</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Рита Беннетт -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/rita bennett.jpg" class="card-img-top" alt="Рита Беннетт">
+                            <div class="card-body">
+                                <h5 class="card-title">Рита Беннетт</h5>
+                                <p class="card-text">
+                                    Девушка, а затем жена Декстера. Добрая, заботливая и мягкая, 
+                                    играет ключевую роль в его личной жизни и помогает раскрывать его человеческую сторону.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Джули Бенц</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                <h2 class="text-center section-title mb-5">Антагонисты</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Брайан Мозер -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/brian moser.jpg" class="card-img-top" alt="Брайан Мозер">
+                            <div class="card-body">
+                                <h5 class="card-title">Брайан Мозер/Ледяной убийца</h5>
+                                <p class="card-text">
+                                    Серийный убийца, который оставляет обескровленные, расчлененные тела. 
+                                    Является биологическим братом Декстера. 
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Кристиан Камарго</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Лайла Уэст -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/lila west.jpg" class="card-img-top" alt="Лайла Уэст">
+                            <div class="card-body">
+                                <h5 class="card-title">Лайла Уэст</h5>
+                                <p class="card-text">
+                                    Художница и спонсор Декстера в группе Анонимных Наркоманов. 
+                                    Сначала она кажется просто эксцентричной любовницей, 
+                                    но вскоре проявляет себя как опасная психопатка-пироманьячка, 
+                                    одержимая Декстером, готовая убить любого, кто встанет у нее на пути.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Джейми Мюррей</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Мигель Прадо -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/miguel prado.jpg" class="card-img-top" alt="Мигель Прадо">
+                            <div class="card-body">
+                                <h5 class="card-title">Мигель Прадо</h5>
+                                <p class="card-text">
+                                    Помощник окружного прокурора, который узнаёт тайну Декстера 
+                                    и сначала становится его «другом» и учеником, но вскоре выходит из-под контроля,
+                                     убивает ради личной выгоды и манипулирует Декстером, превращаясь в опасного врага.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Джимми Смитс</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Артур Митчелл -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/trinity.jpg" class="card-img-top" alt="Артур Митчелл">
+                            <div class="card-body">
+                                <h5 class="card-title">Артур Митчелл/Троица</h5>
+                                <p class="card-text">
+                                    Примерный семьянин и церковный дьякон, 
+                                    который на протяжении 30 лет безнаказанно совершает ритуальные убийства циклами по три 
+                                    (позже выясняется, что по четыре) жертвы по всей стране.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Джон Литгоу</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Джордан Чейз -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/Jordan Chase.jpg" class="card-img-top" alt="Джордан Чейз">
+                            <div class="card-body">
+                                <h5 class="card-title">Джордан Чейз</h5>
+                                <p class="card-text">
+                                    Мотивационный оратор, который тайно руководит бандой насильников, 
+                                    ответственность на которой лежит за серийные изнасилования и убийства девушек.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Джонни Ли Миллер</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Трэвис Маршалл -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/travis marshall.jpg" class="card-img-top" alt="Трэвис Маршалл">
+                            <div class="card-body">
+                                <h5 class="card-title">Трэвис Маршалл/Убийца Судного дня</h5>
+                                <p class="card-text">
+                                    Был членом Культурного центра Майами, 
+                                    который стал серийным убийцей и совершил несколько убийств, связанных с Библией, 
+                                    чтобы вызвать апокалипсис. У него была вторая личность, 
+                                    основанная на профессоре Джеймсе Гелларе, которого он ранее убил.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Колин Хэнкс</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Айзек Сирко -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/isaak sirko.jpg" class="card-img-top" alt="Айзек Сирко">
+                            <div class="card-body">
+                                <h5 class="card-title">Айзек Сирко</h5>
+                                <p class="card-text">
+                                    Лидер украинской мафии «Братства кошки», который также владеет сетью стриптиз-клубов, 
+                                    в том числе в Майами под названием «Лисья нора».
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Рэй Стивенсон</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Оливер Саксон -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/oliver saxon.jpg" class="card-img-top" alt="Оливер Саксон">
+                            <div class="card-body">
+                                <h5 class="card-title">Даниэль Фогель/Оливер Саксон</h5>
+                                <p class="card-text">
+                                    Серийный убийца, более известный под прозвищем «Нейрохирург», 
+                                    который вырезает части головного мозга у жертв.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Дарри Ингоульфссон</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Сериалы" -->
+<section id="series" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">Вселенная Декстера</h2>
+        
+        <!-- Сериал 1: Декстер (нечётный) -->
+        <div class="series-item mb-5">
+            <div class="row align-items-center g-4">
+                <!-- Постер слева -->
+                <div class="col-lg-6">
+                    <div class="series-poster">
+                        <img src="img/dexter2006.jpg" class="img-fluid rounded shadow" alt="Декстер (2006-2013)">
+                        <!-- УБРАН красный рейтинг-бейдж -->
+                    </div>
+                </div>
+                <!-- Информация справа -->
+                <div class="col-lg-6">
+                    <div class="series-info">
+                        <h3 class="series-title">Декстер<span class="year">(2006-2013)</span></h3>
+                        <div class="rating mb-3">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-text">8.6/10 (IMDb)</span>
+                        </div>
+                        <p class="series-description">
+                            Судмедэксперт полиции Майами Декстер Морган ведёт двойную жизнь: 
+                            днём он помогает расследовать убийства, 
+                            а по ночам сам убивает ускользнувших от правосудия преступников.
+                        </p>
+                        <div class="series-meta">
+                            <span class="badge bg-danger me-2">8 сезонов</span>
+                            <span class="badge bg-secondary me-2">96 эпизодов</span>
+                            <span class="badge bg-dark">Драма/Триллер</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Сериал 2: Новая кровь (чётный) -->
+        <div class="series-item mb-5">
+            <div class="row align-items-center g-4 flex-lg-row-reverse">
+                <!-- Постер справа -->
+                <div class="col-lg-6">
+                    <div class="series-poster">
+                        <img src="img/dexternewblood.jpg" class="img-fluid rounded shadow" alt="Декстер: Новая кровь">
+                       
+                    </div>
+                </div>
+                <!-- Информация слева -->
+                <div class="col-lg-6">
+                    <div class="series-info">
+                        <h3 class="series-title">Декстер: Новая кровь <span class="year">(2021)</span></h3>
+                        <div class="rating mb-3">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-text">8.5/10 (IMDb)</span>
+                        </div>
+                        <p class="series-description">
+                            Спустя 10 лет после инсценировки своей смерти Декстер Морган 
+                            живёт под чужим именем в тихом городке и работает в оружейном магазине. 
+                            Серия загадочных убийств грозит выдать его тёмную сущность.
+                        </p>
+                        <div class="series-meta">
+                            <span class="badge bg-danger me-2">1 сезон</span>
+                            <span class="badge bg-secondary me-2">10 эпизодов</span>
+                            <span class="badge bg-dark">Продолжение</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Сериал 3: Первородный грех (нечётный) -->
+        <div class="series-item mb-5">
+            <div class="row align-items-center g-4">
+                <!-- Постер слева -->
+                <div class="col-lg-6">
+                    <div class="series-poster">
+                        <img src="img/dexteroriginalsin.jpg" class="img-fluid rounded shadow" alt="Декстер: Первородный грех">
+                        <!-- УБРАН красный рейтинг-бейдж -->
+                    </div>
+                </div>
+                <!-- Информация справа -->
+                <div class="col-lg-6">
+                    <div class="series-info">
+                        <h3 class="series-title">Декстер: Первородный грех <span class="year">(2024)</span></h3>
+                        <div class="rating mb-3">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-text">8.2/10 (IMDb)</span>
+                        </div>
+                        <p class="series-description">
+                            В 1991 году юный Декстер Морган понимает, что не может подавить тягу к убийствам,
+                            и приёмный отец создаёт для него кодекс против опасных преступников.
+                        </p>
+                        <div class="series-meta">
+                            <span class="badge bg-danger me-2">1 сезон</span>
+                            <span class="badge bg-secondary me-2">10 эпизодов</span>
+                            <span class="badge bg-dark">Происхождение</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Сериал 4: Воскрешение (чётный) -->
+        <div class="series-item mb-5">
+            <div class="row align-items-center g-4 flex-lg-row-reverse">
+                <!-- Постер справа -->
+                <div class="col-lg-6">
+                    <div class="series-poster">
+                        <img src="img/dexterresurrection.jpg" class="img-fluid rounded shadow" alt="Декстер: Воскрешение">
+                        <!-- УБРАН красный рейтинг-бейдж -->
+                    </div>
+                </div>
+                <!-- Информация слева -->
+                <div class="col-lg-6">
+                    <div class="series-info">
+                        <h3 class="series-title">Декстер: Воскрешение <span class="year">(2025)</span></h3>
+                        <div class="rating mb-3">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-text">9.2/10 (IMDb)</span>
+                        </div>
+                        <p class="series-description">
+                            События разворачиваются спустя несколько недель после того, как сын Декстера, Харрисон, 
+                            выстрелил в него. Выжив после комы, Декстер отправляется в Нью-Йорк, 
+                            чтобы найти сына и попытаться с ним объясниться.
+                        </p>
+                        <div class="series-meta">
+                            <span class="badge bg-danger me-2">1 сезон</span>
+                            <span class="badge bg-secondary me-2">10 эпизодов</span>
+                            <span class="badge bg-dark">Новый сериал</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Раздел "Галерея" -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Галерея</h2>
+                
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div id="galleryCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="img/kadr1.jpg" class="d-block w-100" alt="Декстер занимается анализом">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Анализ брызг</h4>
+                                        <p>Декстер Морган занимается анализом разбрызгивания крови на месте преступления.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/surprise mf.jpg" class="d-block w-100" alt="Знаменитый мем">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Surprise Mf</h4>
+                                        <p>Фраза «Surprise, motherf*****!» — это, пожалуй, самый известный мем, который подарил сериал массовой культуре.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/brian and dexter.jpg" class="d-block w-100" alt="Декстер и Брайан">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Декстер и Брайан</h4>
+                                        <p>6 сезон 7 серия: Брайан появляется как галлюцинация Декстера. 
+                                            В этой серии он временно заменяет Гарри в сознании Декстера, 
+                                            призывая его отказаться от Кодекса и поддаться чистой ярости.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/dexterintro.jpg" class="d-block w-100" alt="Dexter intro">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Intro</h4>
+                                        <p>Кадр из заставки сериала.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/tropies.jpg" class="d-block w-100" alt="Трофеи Декстера">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Трофеи Декстера</h4>
+                                        <p>Вместо личных вещей жертв Декстер хранит их кровь на предметных стеклах 
+                                        как символ власти над моментом триумфа. Архив спрятан в деревянной коробке внутри кондиционера.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дополнительная информация -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="mb-4"><i class="fas fa-award me-3"></i>Награды и признание</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">• Сериал «Декстер» был номинирован на 7 премий Золотого глобуса, 
+                                из которых выиграл 2.</li>
+                            <li class="mb-2">• Сериал "Декстер" был номинирован на 11 премии "Эмми" и получил 4 награды, 
+                                включая 2 в категории "Лучший актер драматического сериала" (Майкл С. Холл).</li>
+                            <li class="mb-2">• «2010 — Премия Гильдии киноактеров: Лучшая мужская роль»</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="mb-4"><i class="fas fa-book me-3"></i>Книжная серия</h4>
+                        <p>
+                            Сериал основан на романах Джеффа Линдсея:
+                        </p>
+                        <ol class="ps-3">
+                            <li class="mb-1">Дремлющий демон Декстера (2004)</li>
+                            <li class="mb-1">Добрый друг Декстер (2005)</li>
+                            <li class="mb-1">Декстер во мраке (2007)</li>
+                            <li class="mb-1">Декстер в деле (2009)</li>
+                            <li class="mb-1">Деликатесы Декстера (2010)</li>
+                            <li class="mb-1">Двойник Декстера (2011)</li>
+                            <li class="mb-1">Последний Дубль Декстера (2013)</li>
+                            <li class="mb-1">Декстер мёртв (2015)</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="mb-4"><i class="fas fa-film me-3"></i>Культурное влияние</h4>
+                        <p>
+                            "Декстер" оказал значительное влияние на массовую культуру, 
+                            телевидение и общественное восприятие морали. Он стал одним из столпов «золотого века» телевидения, 
+                            когда границы между добром и злом в главных героях окончательно размылись.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Футер -->
+<footer class="bg-black text-white py-5">
+    <div class="container text-center"> 
+        <div class="d-flex flex-column align-items-center mb-4">
+            <img src="img/dexterlogo.png" alt="Логотип" width="200" height="150" class="mb-3"> 
+            <h4 class="mb-1">Мир Декстера</h4>
+            <p class="mb-0 text-muted-light">Информационный портал о культовом сериале</p> 
+        </div>
+        <p class="text-muted-light mb-3">
+            Сайт создан в образовательных целях. Все права на сериал "Декстер" принадлежат 
+            Showtime Networks, Paramount Global и правообладателям.
+        </p>
+        <hr class="bg-secondary my-4">
+        <p class="mb-0 text-muted-light">&copy; 2026 Мир Декстера. Все права защищены. | Сайт создан для образовательного проекта</p>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Плавная прокрутка -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Обновляем активный пункт меню
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Плавная прокрутка
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        
+        // Автоматическое обновление активного пункта меню при прокрутке
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

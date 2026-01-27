@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/dexterlogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Dexter | Information site about the series</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#home">
+                    <img src="img/dexterlogo.png" alt="Логотип Декстера" width="70" height="50" class="me-2">
+                </a>
+                
+                <!-- Mobile menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation links -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About the series</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#characters">Characters</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#series">Series</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langSelector" data-bs-toggle="dropdown">EN</a>
+                             <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="index.html">Русский</a></li>
+                                    <li><a class="dropdown-item active" href="index-en.html">English</a></li>
+                                    <li><a class="dropdown-item" href="index-ee.html">Eesti</a></li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main banner -->
+        <section id="home" class="hero-banner">
+            <div class="hero-overlay">
+                <div class="container hero-content">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h1 class="display-2 fw-bold mb-4"> <img src="img/dexterlogo.png" alt="Логотип Декстера" width="200" height="150" class="me-2"></h1>
+                            <p class="lead fs-3 mb-4">The Dark Side of Justice</p>
+                            <p class="fs-5 mb-5">The series that changed the perception of superheroes and villains</p>
+                            <a href="#about" class="btn btn-danger btn-lg px-5 py-3">Explore Dexter's world</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "About the series" -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <h2 class="text-center section-title mb-4">Television legend</h2>
+                        <div class="about-text">
+                            <p class="fs-5">
+                                <strong>"Dexter"</strong> — A revolutionary psychological thriller television series,
+                                which gripped millions of viewers worldwide for eight years.
+                                The unique plot of a serial killer who kills other killers challenged
+                                traditional notions of good and evil, heroes and antiheroes.
+                            </p>
+                            <p class="fs-5">
+                                The series, based on the novels by Jeff Lindsay, became one of the most talked-about television projects of the 2000s, 
+                                receiving critical acclaim and numerous awards, including a Golden Globe Award.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Statistics -->
+                <div class="row stats-row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Seasons</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">96</div>
+                            <div class="stat-label">Episodes</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">8.6</div>
+                            <div class="stat-label">grade</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">24+</div>
+                            <div class="stat-label">Awards</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Characters" -->
+        <section id="characters" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Characters</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Dexter Morgan -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/dexter morgan.jpg" class="card-img-top" alt="Dexter Morgan">
+                            <div class="card-body">
+                                <h5 class="card-title">Dexter Morgan</h5>
+                                <p class="card-text">
+                                    The protagonist, a Miami police forensic scientist, 
+                                    leads a double life as a serial killer,
+                                    who eliminates criminals who have escaped justice.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Michael C. Hall</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Debra Morgan -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/debra morgan.jpg" class="card-img-top" alt="Debra Morgan">
+                            <div class="card-body">
+                                <h5 class="card-title">Debra Morgan</h5>
+                                <p class="card-text">
+                                    Dexter's sister, a Miami police detective, is ambitious, emotional, 
+                                    and completely dedicated to her job, unaware of her brother's dark side.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jennifer Carpenter</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Harry Morgan -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/harry morgan.jpg" class="card-img-top" alt="Harry Morgan">
+                            <div class="card-body">
+                                <h5 class="card-title">Harry Morgan</h5>
+                                <p class="card-text">
+                                   A cop, Dexter's adoptive father, 
+                                   who channeled his madness into a specific direction, 
+                                   formalized as the "Code of Harry."
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">James Remar</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Angel Batista -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/angel batista.jpg" class="card-img-top" alt="Angel Batista">
+                            <div class="card-body">
+                                <h5 class="card-title">Angel Batista</h5>
+                                <p class="card-text">
+                                    A homicide detective who works alongside Dexter and Debra.
+                                    Honest, married, and unhappy in his marriage.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">David Zayas</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vince Masuka -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/vince masuka.jpg" class="card-img-top" alt="Vince Masuka">
+                            <div class="card-body">
+                                <h5 class="card-title">Vince Masuka</h5>
+                                <p class="card-text">
+                                    A forensic scientist and Dexter's colleague. 
+                                    A fan of dirty jokes that go unnoticed by those around him, 
+                                    he takes his work and research extremely seriously.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">C. S. Lee</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- James Doakes -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/james doakes.jpg" class="card-img-top" alt="James Doakes">
+                            <div class="card-body">
+                                <h5 class="card-title">James Doakes</h5>
+                                <p class="card-text">
+                                    A homicide sergeant and an old friend of LaGuerta's.
+                                    The only cop who openly disliked and distrusted Dexter.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Eric King</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maria LaGuerta -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/maria laguerta.jpg" class="card-img-top" alt="Maria LaGuerta">
+                            <div class="card-body">
+                                <h5 class="card-title">Maria LaGuerta</h5>
+                                <p class="card-text">
+                                    A homicide captain who leads numerous murder investigations. A skilled diplomat,
+                                    he actively uses the media and connections in the Cuban community to advance his career.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Loren Velez</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rita Bennett -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/rita bennett.jpg" class="card-img-top" alt="Rita Bennett">
+                            <div class="card-body">
+                                <h5 class="card-title">Rita Bennett</h5>
+                                <p class="card-text">
+                                    Dexter's girlfriend, then wife. Kind, caring, and gentle, 
+                                    she plays a key role in his personal life and helps him reveal his human side.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Julie Benz</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                <h2 class="text-center section-title mb-5">Antagonists</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Brian Moser -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/brian moser.jpg" class="card-img-top" alt="Brian Moser">
+                            <div class="card-body">
+                                <h5 class="card-title">Brian Moser/Ice Truck Killer</h5>
+                                <p class="card-text">
+                                    A serial killer who leaves bloodless, dismembered bodies.
+                                    He is Dexter's biological brother.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Christian Camargo</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lila West -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/lila west.jpg" class="card-img-top" alt="Lila West">
+                            <div class="card-body">
+                                <h5 class="card-title">Lila West</h5>
+                                <p class="card-text">
+                                    An artist and Dexter's sponsor in Narcotics Anonymous.
+                                    At first, she appears to be just an eccentric lover,
+                                    but soon reveals herself to be a dangerous, psychotic, pyromaniac,
+                                    obsessed with Dexter, ready to kill anyone who gets in her way.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jamie Murray</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Miguel Prado -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/miguel prado.jpg" class="card-img-top" alt="Miguel Prado">
+                            <div class="card-body">
+                                <h5 class="card-title">Miguel Prado</h5>
+                                <p class="card-text">
+                                    An assistant district attorney who discovers Dexter's secret
+                                    and initially becomes his "friend" and apprentice, but soon spirals out of control,
+                                    killing for personal gain and manipulating Dexter, turning him into a dangerous enemy.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jimmy Smits</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Arthur Mitchell -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/trinity.jpg" class="card-img-top" alt="Arthur Mitchell">
+                            <div class="card-body">
+                                <h5 class="card-title">Arthur Mitchell/The Trinity killer</h5>
+                                <p class="card-text">
+                                    A model family man and church deacon,
+                                    who, for 30 years, has been committing ritual murders with impunity in cycles of three
+                                    (later revealed to be four) victims across the country.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">John Lithgow</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jordan Chase -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/Jordan Chase.jpg" class="card-img-top" alt="Jordan Chase">
+                            <div class="card-body">
+                                <h5 class="card-title">Jordan Chase</h5>
+                                <p class="card-text">
+                                    A motivational speaker who secretly leads a gang of rapists 
+                                    responsible for the serial rapes and murders of young women.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jonny Lee Miller</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Travis Marshall -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/travis marshall.jpg" class="card-img-top" alt="Travis Marshall">
+                            <div class="card-body">
+                                <h5 class="card-title">Travis Marshall/The Doomsday Killer</h5>
+                                <p class="card-text">
+                                    He was a member of the Miami Cultural Center who became a serial killer 
+                                    and committed several Bible-related murders in order to bring about the apocalypse. 
+                                    He had a second personality, 
+                                    based on Professor James Gellar, whom he had previously killed.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Colin Hanks</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Isaak Sirko -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/isaak sirko.jpg" class="card-img-top" alt="Isaak Sirko">
+                            <div class="card-body">
+                                <h5 class="card-title">Isaak Sirko</h5>
+                                <p class="card-text">
+                                    The leader of the Ukrainian mafia "Koshka Brotherhood", who also owns a chain of strip clubs, 
+                                    including one in Miami called "Fox Hole."
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Ray Stevenson</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Oliver Saxon -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/oliver saxon.jpg" class="card-img-top" alt="Oliver Saxon">
+                            <div class="card-body">
+                                <h5 class="card-title">Daniel Vogel/Oliver Saxon</h5>
+                                <p class="card-text">
+                                    A serial killer better known by the nickname "The Brain Surgeon,"
+                                    who removes parts of his victims' brains.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Darri Ingolfsson</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Series" -->
+        <section id="series" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Dexter Universe</h2>
+                
+                <!-- Series 1: Dexter (odd) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4">
+                        <!-- Poster on the left -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexter2006.jpg" class="img-fluid rounded shadow" alt="Декстер (2006-2013)">
+                            </div>
+                        </div>
+                        <!-- Information on the right -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter <span class="year">(2006-2013)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span class="rating-text">8.6/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    Miami police forensic scientist Dexter Morgan leads a double life:
+                                    by day, he helps investigate murders, and by night,
+                                     he kills criminals who have eluded justice.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">8 seasons</span>
+                                    <span class="badge bg-secondary me-2">96 episodes</span>
+                                    <span class="badge bg-dark">Drama/Thriller</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Series 2: New Blood (even) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4 flex-lg-row-reverse">
+                        <!-- Poster on the right -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexternewblood.jpg" class="img-fluid rounded shadow" alt="Декстер: Новая кровь">
+                            </div>
+                        </div>
+                        <!-- Information on the left -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter: New Blood <span class="year">(2021)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span class="rating-text">8.5/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    Ten years after faking his death, Dexter Morgan
+                                    lives under an assumed name in a quiet town and works in a gun shop.
+                                    A series of mysterious murders threatens to expose his dark side.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">1 season</span>
+                                    <span class="badge bg-secondary me-2">10 episodes</span>
+                                    <span class="badge bg-dark">Continuation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Series 3: Original Sin (odd) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4">
+                        <!-- Poster on the left -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexteroriginalsin.jpg" class="img-fluid rounded shadow" alt="Декстер: Первородный грех">
+                            </div>
+                        </div>
+                        <!-- Information on the right -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter: Original Sin <span class="year">(2024)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span class="rating-text">8.2/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    In 1991, young Dexter Morgan realizes he can't suppress his urge to kill, 
+                                    and his adoptive father creates a code for him against dangerous criminals.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">1 season</span>
+                                    <span class="badge bg-secondary me-2">10 episodes</span>
+                                    <span class="badge bg-dark">Origin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Series 4: Resurrection (even) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4 flex-lg-row-reverse">
+                        <!-- Poster on the right -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexterresurrection.jpg" class="img-fluid rounded shadow" alt="Декстер: Воскрешение">
+                            </div>
+                        </div>
+                        <!-- Information on the left -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter: Resurrection <span class="year">(2025)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="rating-text"> 9.2/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    The events unfold several weeks after Dexter's son, Harrison, shot him. 
+                                    Surviving a coma, Dexter travels to New York City to find his son and try to explain things to him.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">1 season</span>
+                                    <span class="badge bg-secondary me-2">10 episodes</span>
+                                    <span class="badge bg-dark">New series</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Gallery" -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Gallery</h2>
+                
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div id="galleryCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="img/kadr1.jpg" class="d-block w-100" alt="Dexter is doing some analysis">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Splash analysis</h4>
+                                        <p>Dexter Morgan is conducting a blood spatter analysis at a crime scene.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/surprise mf.jpg" class="d-block w-100" alt="Famous meme">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Surprise Mf</h4>
+                                        <p>The phrase "Surprise, motherf*****!" is perhaps the most famous meme the show has contributed to popular culture.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/brian and dexter.jpg" class="d-block w-100" alt="Dexter and Brian">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Dexter and Brian</h4>
+                                        <p>Season 6, Episode 7: Brian appears as a hallucination in Dexter's mind.
+                                            In this episode, he temporarily replaces Harry in Dexter's mind,
+                                            urging him to abandon the Code and give in to pure rage.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/dexterintro.jpg" class="d-block w-100" alt="Dexter intro">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Intro</h4>
+                                        <p>A still from the series' opening credits.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/tropies.jpg" class="d-block w-100" alt="Dexter's Trophies">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Dexter's Trophies</h4>
+                                        <p>Instead of the victims' personal belongings, Dexter preserves their blood on glass slides 
+                                            as a symbol of his power over the moment of triumph. 
+                                            The archive is hidden in a wooden box inside an air conditioner.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional information -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="mb-4"><i class="fas fa-award me-3"></i>Awards and recognition</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">• The series "Dexter" was nominated for seven Golden Globe Awards,
+                                winning two.</li>
+                            <li class="mb-2">• Dexter was nominated for 11 Emmy Awards and won four, 
+                                including two for Outstanding Lead Actor in a Drama Series (Michael C. Hall).</li>
+                            <li class="mb-2">• 2010 Screen Actors Guild Award: Best Actor</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="mb-4"><i class="fas fa-book me-3"></i>Book series</h4>
+                        <p>
+                            The series is based on the novels by Jeff Lindsay:
+                        </p>
+                        <ol class="ps-3">
+                            <li class="mb-1">Dexter's Dreaming Demon (2004)</li>
+                            <li class="mb-1">Dexter's Good Friend (2005)</li>
+                            <li class="mb-1">Dexter in the Dark (2007)</li>
+                            <li class="mb-1">Dexter in Action (2009)</li>
+                            <li class="mb-1">Dexter's Delicacies (2010)</li>
+                            <li class="mb-1">Dexter's Double (2011)</li>
+                            <li class="mb-1">Dexter's Final Take (2013)</li>
+                            <li class="mb-1">Dexter is Dead (2015)</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="mb-4"><i class="fas fa-film me-3"></i>Cultural influence</h4>
+                        <p>
+                            "Dexter" had a significant impact on popular culture, television, and public perceptions of morality. 
+                            It became one of the pillars of television's "golden age," 
+                            when the lines between good and evil in its main characters became completely blurred.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+<footer class="bg-black text-white py-5">
+    <div class="container text-center"> 
+        <div class="d-flex flex-column align-items-center mb-4">
+            <img src="img/dexterlogo.png" alt="Логотип" width="200" height="150" class="mb-3"> 
+            <h4 class="mb-1">The World of Dexter</h4>
+            <p class="mb-0 text-muted-light">An information portal about the cult series</p>
+        </div>
+        <p class="text-muted-light mb-3">
+            This website is created for educational purposes. 
+            All rights to the series "Dexter" belong to Showtime Networks, Paramount Global, and the copyright holders.
+        </p>
+        <hr class="bg-secondary my-4">
+        <p class="mb-0 text-muted-light">&copy; 2026 The World of Dexter. All rights reserved. | This website was created for an educational project.</p>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Update the active menu item
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Smooth scrolling
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Automatically update the active menu item when scrolling
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

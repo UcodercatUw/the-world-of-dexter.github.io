@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ee">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/dexterlogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexteri maailm | Sarja infoleht</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- Логотип -->
+                <a class="navbar-brand" href="#home">
+                    <img src="img/dexterlogo.png" alt="Логотип Декстера" width="70" height="50" class="me-2">
+                </a>
+                
+                <!-- Мобильное меню -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Навигационные ссылки -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Avaleht</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sarja kohta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#characters">Tegelased</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#series">Seeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Galerii</a></li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langSelector" data-bs-toggle="dropdown">EE</a>
+                             <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="index.html">Русский</a></li>
+                                    <li><a class="dropdown-item" href="index-en.html">English</a></li>
+                                    <li><a class="dropdown-item active" href="index-ee.html">Eesti</a></li>
+                             </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Главный баннер -->
+        <section id="home" class="hero-banner">
+            <div class="hero-overlay">
+                <div class="container hero-content">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h1 class="display-2 fw-bold mb-4"> <img src="img/dexterlogo.png" alt="Логотип Декстера" width="200" height="150" class="me-2"></h1>
+                            <p class="lead fs-3 mb-4">Õigluse tume pool</p>
+                            <p class="fs-5 mb-5">Sari, mis muutis arusaama superkangelastest ja kaabakatest</p>
+                            <a href="#about" class="btn btn-danger btn-lg px-5 py-3">Avasta Dexteri maailm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "О сериале" -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <h2 class="text-center section-title mb-4">Televisioonilegend</h2>
+                        <div class="about-text">
+                            <p class="fs-5">
+                                <strong>"Dexter"</strong> — Revolutsiooniline psühholoogiline põnevik telesari,
+                                mis köitis kaheksa aasta jooksul miljoneid vaatajaid üle maailma.
+                                Ainulaadne süžee sarimõrvarist, kes tapab teisi tapjaid, 
+                                seadis kahtluse alla traditsioonilised arusaamad heast ja kurjast, kangelastest ja antikangelastest.
+                            </p>
+                            <p class="fs-5">
+                                Jeff Lindsay romaanidel põhinev sari sai 2000. aastate üheks enim kõneainet pakkunud teleprojektiks, 
+                                mis pälvis kriitikute tunnustuse ja arvukalt auhindu, sealhulgas Kuldgloobuse auhinna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Статистика -->
+                <div class="row stats-row text-center">
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">hooaega</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">96</div>
+                            <div class="stat-label">Episoodid</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">8.6</div>
+                            <div class="stat-label">hinne</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="stat-box p-4">
+                            <div class="stat-number">24+</div>
+                            <div class="stat-label">Auhinnad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Персонажи" -->
+        <section id="characters" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Tegelased</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Декстер Морган -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/dexter morgan.jpg" class="card-img-top" alt="Декстер Морган">
+                            <div class="card-body">
+                                <h5 class="card-title">Dexter Morgan</h5>
+                                <p class="card-text">
+                                    Peategelane, Miami politsei kohtumeditsiini spetsialist,
+                                    elab topeltelu sarimõrvarina,
+                                    kes kõrvaldab õigusemõistmise eest pääsenud kurjategijad.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Michael C. Hall</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Дебра Морган -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/debra morgan.jpg" class="card-img-top" alt="Дебра Морган">
+                            <div class="card-body">
+                                <h5 class="card-title">Debra Morgan</h5>
+                                <p class="card-text">
+                                    Dexteri õde, Miami politsei detektiiv, on ambitsioonikas, 
+                                    emotsionaalne ja täielikult pühendunud oma tööle, 
+                                    teadmata oma venna tumedast poolest.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jennifer Carpenter</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Гарри Морган -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/harry morgan.jpg" class="card-img-top" alt="Гарри Морган">
+                            <div class="card-body">
+                                <h5 class="card-title">Harry Morgan</h5>
+                                <p class="card-text">
+                                   Politseinik, Dexteri kasuisa,
+                                   kes suunas oma hullumeelsuse kindlasse suunda,
+                                   vormistas selle kui "Harry koodeksi".
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">James Remar</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Энжел Батиста -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/angel batista.jpg" class="card-img-top" alt="Энжел Батыста">
+                            <div class="card-body">
+                                <h5 class="card-title">Angel Batista</h5>
+                                <p class="card-text">
+                                    Mõrvauurija, kes töötab koos Dexteri ja Debraga.
+                                    Aus, abielus ja õnnetu oma abielus.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">David Zayas</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Винс Масука -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/vince masuka.jpg" class="card-img-top" alt="Винс Масука">
+                            <div class="card-body">
+                                <h5 class="card-title">Vince Masuka</h5>
+                                <p class="card-text">
+                                    Kohtuekspert ja Dexteri kolleeg.
+                                    Ta armastab roppusi nalju, mis jäävad ümbritsevatele märkamatuks,
+                                    mistõttu võtab ta oma tööd ja uurimistööd äärmiselt tõsiselt.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">C. S. Lee</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Джеймс Доакс -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/james doakes.jpg" class="card-img-top" alt="Джеймс Доакс">
+                            <div class="card-body">
+                                <h5 class="card-title">James Doakes</h5>
+                                <p class="card-text">
+                                    Mõrvaseersant ja LaGuerta vana sõber.
+                                    Ainus politseinik, kes Dexterit avalikult ei sallinud ega umbusaldanud.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Eric King</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Мария ЛаГуэрта -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/maria laguerta.jpg" class="card-img-top" alt="Мария ЛаГуэрта">
+                            <div class="card-body">
+                                <h5 class="card-title">Maria LaGuerta</h5>
+                                <p class="card-text">
+                                    Mõrvaosakonna kapten, kes juhib arvukalt mõrvauurimisi. 
+                                    Oskusliku diplomaadina kasutab ta aktiivselt meediat 
+                                    ja Kuuba kogukonna sidemeid oma karjääri edendamiseks.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Loren Velez</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Рита Беннетт -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/rita bennett.jpg" class="card-img-top" alt="Рита Беннетт">
+                            <div class="card-body">
+                                <h5 class="card-title">Rita Bennett</h5>
+                                <p class="card-text">
+                                    Dexteri tüdruksõber ja seejärel abikaasa. Lahke, hooliv ja leebe,
+                                    mängib ta võtmerolli tema isiklikus elus ja aitab tal oma inimlikku poolt paljastada.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Julie Benz</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                <h2 class="text-center section-title mb-5">Antagonistid</h2>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Брайан Мозер -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/brian moser.jpg" class="card-img-top" alt="Брайан Мозер">
+                            <div class="card-body">
+                                <h5 class="card-title">Brian Moser/Jääveoautode tapja</h5>
+                                <p class="card-text">
+                                    Seeria tapja, kes jätab maha veretuid, tükeldatud kehasid.
+                                    Ta on Dexteri bioloogiline vend.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Christian Camargo</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Лайла Уэст -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/lila west.jpg" class="card-img-top" alt="Лайла Уэст">
+                            <div class="card-body">
+                                <h5 class="card-title">Lila West</h5>
+                                <p class="card-text">
+                                    Kunstnik ja Dexteri sponsor Narkomaanide Anonüümsete grupis.
+                                    Alguses tundub ta lihtsalt ekstsentrilise armastajana, 
+                                    kuid peagi selgub, et ta on ohtlik, psühhootiline ja püromaan, 
+                                    kes on Dexterist kinnisideeks ja valmis tapma igaüht, kes tema teele jääb.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jamie Murray</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Мигель Прадо -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/miguel prado.jpg" class="card-img-top" alt="Мигель Прадо">
+                            <div class="card-body">
+                                <h5 class="card-title">Miguel Prado</h5>
+                                <p class="card-text">
+                                   Ringkonnaprokuröri abi, kes avastab Dexteri saladuse
+                                   ja kellest saab esialgu tema "sõber" ja õpipoiss, kuid peagi kaotab ta olukorra kontrolli,
+                                   tappes isikliku kasu saamiseks 
+                                   ja manipuleerides Dexteriga, muutes ta ohtlikuks vaenlaseks.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jimmy Smits</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Артур Митчелл -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/trinity.jpg" class="card-img-top" alt="Артур Митчелл">
+                            <div class="card-body">
+                                <h5 class="card-title">Arthur Mitchell / Kolmainu tapja</h5>
+                                <p class="card-text">
+                                    Eeskujulik pereisa ja kiriku diakon, kes on 30 aasta jooksul karistamatult toime pannud rituaalseid mõrvu tsüklitena, 
+                                    mille jooksul on üle riigi hukkunud kolm (hiljem selgus, et neli) ohvrit.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">John Lithgow</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Джордан Чейз -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/Jordan Chase.jpg" class="card-img-top" alt="Джордан Чейз">
+                            <div class="card-body">
+                                <h5 class="card-title">Jordan Chase</h5>
+                                <p class="card-text">
+                                    Motivatsioonikõneleja, kes juhib salaja vägistajate jõuku, 
+                                    kes vastutab noorte naiste sarimõrvade ja -vägistamiste eest.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jonny Lee Miller</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Трэвис Маршалл -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/travis marshall.jpg" class="card-img-top" alt="Трэвис Маршалл">
+                            <div class="card-body">
+                                <h5 class="card-title">Travis Marshall / Viimsepäeva tapja</h5>
+                                <p class="card-text">
+                                    Ta oli Miami kultuurikeskuse liige, kellest sai sarimõrvar ja kes pani toime mitu piibliga seotud mõrva, 
+                                    et esile kutsuda apokalüpsis.
+                                    Tal oli teine ​​isiksus,
+                                    mis põhines professor James Gellaril, kelle ta oli varem tapnud.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Colin Hanks</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Айзек Сирко -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/isaak sirko.jpg" class="card-img-top" alt="Айзек Сирко">
+                            <div class="card-body">
+                                <h5 class="card-title">Isaak Sirko</h5>
+                                <p class="card-text">
+                                    Ukraina maffia "Koška Vennaskond" juht, kellele kuulub ka stripiklubide kett,
+                                    sealhulgas Miamis asuv klubi nimega "Fox Hole".
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Ray Stevenson</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Оливер Саксон -->
+                    <div class="col">
+                        <div class="character-card card h-100">
+                            <img src="img/oliver saxon.jpg" class="card-img-top" alt="Оливер Саксон">
+                            <div class="card-body">
+                                <h5 class="card-title">Daniel Vogel/Oliver Saxon</h5>
+                                <p class="card-text">
+                                    Seeria tapja, keda tuntakse paremini hüüdnimega "Ajukirurg", 
+                                    kes eemaldab oma ohvrite ajuosi.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Darri Ingolfsson</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Сериалы" -->
+        <section id="series" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Dexteri universum</h2>
+                
+                <!-- Сериал 1: Декстер (нечётный) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4">
+                        <!-- Постер слева -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexter2006.jpg" class="img-fluid rounded shadow" alt="Декстер (2006-2013)">
+                            </div>
+                        </div>
+                        <!-- Информация справа -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter <span class="year">(2006-2013)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span class="rating-text">8.6/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    Miami politsei kohtumeditsiini spetsialist Dexter Morgan elab topeltelu: 
+                                    päeval aitab ta mõrvu uurida ja öösel tapab õigusemõistmise eest põgenenud kurjategijaid.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">8 Hooaega</span>
+                                    <span class="badge bg-secondary me-2">96 Episoodid</span>
+                                    <span class="badge bg-dark">Draama/Thriller</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Сериал 2: Новая кровь (чётный) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4 flex-lg-row-reverse">
+                        <!-- Постер справа -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexternewblood.jpg" class="img-fluid rounded shadow" alt="Декстер: Новая кровь">
+                            </div>
+                        </div>
+                        <!-- Информация слева -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter: Uus veri <span class="year">(2021)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span class="rating-text">8.5/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    Kümme aastat pärast oma surma lavastamist elab Dexter Morgan 
+                                    vaikses linnas väljamõeldud nime all ja töötab relvapoes.
+                                    Salapäraste mõrvade seeria ähvardab paljastada tema tumeda poole.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">1 Hooaeg</span>
+                                    <span class="badge bg-secondary me-2">10 Episoodid</span>
+                                    <span class="badge bg-dark">Jätk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Сериал 3: Первородный грех (нечётный) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4">
+                        <!-- Постер слева -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexteroriginalsin.jpg" class="img-fluid rounded shadow" alt="Декстер: Первородный грех">
+                            </div>
+                        </div>
+                        <!-- Информация справа -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter: Algne patt <span class="year">(2024)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span class="rating-text">8.2/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    1991. aastal mõistab noor Dexter Morgan, et ta ei suuda oma tapmishimu alla suruda, 
+                                    ja ta kasuisa loob talle ohtlike kurjategijate vastu koodi.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">1 Hooaeg</span>
+                                    <span class="badge bg-secondary me-2">10 Episoodid</span>
+                                    <span class="badge bg-dark">Päritolu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Сериал 4: Воскрешение (чётный) -->
+                <div class="series-item mb-5">
+                    <div class="row align-items-center g-4 flex-lg-row-reverse">
+                        <!-- Постер справа -->
+                        <div class="col-lg-6">
+                            <div class="series-poster">
+                                <img src="img/dexterresurrection.jpg" class="img-fluid rounded shadow" alt="Декстер: Воскрешение">
+                            </div>
+                        </div>
+                        <!-- Информация слева -->
+                        <div class="col-lg-6">
+                            <div class="series-info">
+                                <h3 class="series-title">Dexter: Ülestõusmine <span class="year">(2025)</span></h3>
+                                <div class="rating mb-3">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="rating-text"> 9.2/10 (IMDb)</span>
+                                </div>
+                                <p class="series-description">
+                                    Sündmused arenevad mitu nädalat pärast seda, kui Dexteri poeg Harrison ta maha lasi. 
+                                    Koomast pääsenud Dexter reisib New Yorki, et oma poega leida ja talle asju selgitada.
+                                </p>
+                                <div class="series-meta">
+                                    <span class="badge bg-danger me-2">1 Hooaeg</span>
+                                    <span class="badge bg-secondary me-2">10 Episoodid</span>
+                                    <span class="badge bg-dark">Uus sari</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Раздел "Галерея" -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title mb-5">Galerii</h2>
+                
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div id="galleryCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="img/kadr1.jpg" class="d-block w-100" alt="Dexter teeb analüüsi">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Pritsmete analüüs</h4>
+                                        <p>Dexter Morgan viib kuriteopaigal läbi verepritsmete analüüsi.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/surprise mf.jpg" class="d-block w-100" alt="Kuulus meem">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Surprise Mf</h4>
+                                        <p>Fraas „Surprise motherf*****!“ on ehk kõige kuulsam meem, mille sari on popkultuuri panustanud.
+                                            Selle lausub seersant James Doakes esimese hooaja finaalis,
+                                            kui ta ootamatult kaamera ette ilmub ja Dexteri teolt tabab.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/brian and dexter.jpg" class="d-block w-100" alt="Dexter ja Brian">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Dexter ja Brian</h4>
+                                            <p>6. hooaeg, 7. Episoodi: Brian ilmub hallutsinatsioonina Dexteri peas.
+                                            Selles osas asendab ta ajutiselt Harryt Dexteri peas,
+                                            õhutades teda hülgama Koodi ja andma järele puhtale raevule.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/dexterintro.jpg" class="d-block w-100" alt="Dexter intro">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Intro</h4>
+                                        <p>Kaader sarja avatiitritelt.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/tropies.jpg" class="d-block w-100" alt="Dexteri trofeed">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Dexteri trofeed</h4>
+                                            <p>Ohvrite isiklike asjade asemel säilitab Dexter nende verd klaasdiagrammidel, 
+                                            mis sümboliseerib tema võimu võiduhetkel. Arhiiv on peidetud puidust kasti kliimaseadme sisse.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дополнительная информация -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="mb-4"><i class="fas fa-award me-3"></i>Auhinnad ja tunnustus</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">• Sari "Dexter" nomineeriti seitsmele Kuldgloobuse auhinnale,
+                                millest võitis kaks.
+                            </li>
+                            <li class="mb-2">• Dexter nomineeriti 11 Emmy auhinnale ja võitis neli,
+                                millest kaks on draamasarja parima 
+                                meespeaosatäitja kategoorias (Michael C. Hall).
+                            </li>
+                            <li class="mb-2">• 2010. aasta Ekraaninäitlejate Gildi auhind:
+                                 parim meesnäitleja
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h4 class="mb-4"><i class="fas fa-book me-3"></i>Raamatusari</h4>
+                           <p>Sari põhineb Jeff Lindsay romaanidel:</p>
+                            <ol class="ps-3">
+                                <li class="mb-1">Dexteri unenägudeemon (2004)</li>
+                                <li class="mb-1">Dexteri hea sõber (2005)</li>
+                                <li class="mb-1">Dexter pimeduses (2007)</li>
+                                <li class="mb-1">Dexter tegutsemas (2009)</li>
+                                <li class="mb-1">Dexteri hõrgutised (2010)</li>
+                                <li class="mb-1">Dexteri topeltmäng (2011)</li>
+                                <li class="mb-1">Dexteri viimane võtmine (2013)</li>
+                                <li class="mb-1">Dexter on surnud (2015)</li>
+                            </ol>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="mb-4"><i class="fas fa-film me-3"></i>Kultuuriline mõju</h4>
+                        <p>
+                            "Dexteril" oli märkimisväärne mõju popkultuurile, televisioonile ja avalikkuse arusaamadele moraalist.
+                            Sellest sai üks televisiooni "kuldajastu" alustalasid, kui peategelaste hea ja kurja piirid täielikult hägustusid.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Футер -->
+<footer class="bg-black text-white py-5">
+    <div class="container text-center"> <!-- Центрируем весь контент -->
+        <div class="d-flex flex-column align-items-center mb-4">
+            <img src="img/dexterlogo.png" alt="Логотип" width="200" height="150" class="mb-3"> <!-- Логотип больше -->
+            <h4 class="mb-1">Dexteri maailm</h4>
+            <p class="mb-0 text-muted-light">Infoportaal kultussarja kohta</p> <!-- светлее -->
+        </div>
+        <p class="text-muted-light mb-3">
+            See veebisait on loodud hariduslikel eesmärkidel.
+            Kõik sarja "Dexter" õigused kuuluvad Showtime Networksile, 
+            Paramount Globalile ja autoriõiguste omanikele.
+        </p>
+        <hr class="bg-secondary my-4">
+        <p class="mb-0 text-muted-light">&copy; 2026 Dexteri maailm. Kõik õigused kaitstud. | See veebisait loodi haridusprojekti jaoks.</p>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Плавная прокрутка -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Обновляем активный пункт меню
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Плавная прокрутка
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Автоматическое обновление активного пункта меню при прокрутке
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
