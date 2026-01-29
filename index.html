@@ -13,63 +13,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Временные стили для навигации */
-        .navbar-nav {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .nav-link {
-            padding: 6px 12px !important;
-            font-size: 0.95rem;
-        }
-        
-        .dropdown-menu {
-            min-width: 120px;
-        }
-    </style>
 </head>
 <body>
     <!-- Навигация -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container-fluid px-4"> <!-- Используем container-fluid для более гибкого управления -->
-                <!-- Логотип и кнопка мобильного меню в одной строке -->
-                <div class="d-flex align-items-center w-100">
-                    <!-- Логотип -->
-                    <a class="navbar-brand me-3" href="#home">
-                        <img src="img/dexterlogo.png" alt="Логотип Декстера" width="60" height="45">
-                    </a>
-                    
-                    <!-- Мобильное меню кнопка -->
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <!-- Навигационные ссылки - теперь они будут рядом с логотипом -->
-                    <div class="collapse navbar-collapse flex-grow-0" id="mainNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">О сериале</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#characters">Персонажи</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#series">Сериалы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="langSelector" data-bs-toggle="dropdown">RU</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
+            <div class="container">
+                <!-- Логотип -->
+                <a class="navbar-brand" href="#home">
+                    <img src="img/dexterlogo.png" alt="Логотип Декстера" width="70" height="50" class="me-2">
+                </a>
+                
+                <!-- Мобильное меню -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Навигационные ссылки -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">О сериале</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#characters">Персонажи</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#series">Сериалы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langSelector" data-bs-toggle="dropdown">RU</a>
+                             <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item active" href="index.html">Русский</a></li>
                                     <li><a class="dropdown-item" href="index-en.html">English</a></li>
-                                    <li><a class="dropdown-item" href="index-ee.html">Eesti</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                                    <li><a class="dropdown-item" href="index-et.html">Eesti</a></li>
+                             </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <!-- Главный баннер -->
         <section id="home" class="hero-banner">
@@ -779,7 +760,6 @@
         });
     </script>
 </body>
-
 </html>
 
 
