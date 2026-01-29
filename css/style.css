@@ -50,60 +50,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 0;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1400px; /* Увеличили максимальную ширину */
-    padding: 0 40px; /* Увеличили отступы по бокам */
-}
-
-/* Логотип - строго слева */
-.navbar-brand {
-    margin-right: 0 !important;
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0; /* Запрещаем сжатие логотипа */
-}
-
-/* Навигационное меню - строго справа */
-.navbar-collapse {
-    flex-grow: 1 !important;
-    display: flex;
-    justify-content: flex-end; /* Выравниваем меню по правому краю */
-}
-
-.navbar-nav {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    display: flex;
-    justify-content: flex-end;
-    width: auto;
-}
-
-/* Большое пространство между логотипом и меню */
-.navbar .container {
-    justify-content: space-between; /* Лого слева, меню справа с максимальным пространством между ними */
-}
-
-/* Создаем гибкое пространство */
-.spacer {
-    flex-grow: 1;
-    min-width: 100px; /* Минимальное пространство */
-}
-
-@media (min-width: 1400px) {
-    .navbar .container {
-        padding: 0 60px; /* Еще больше отступов на больших экранах */
-    }
-    
-    .spacer {
-        min-width: 200px; /* Больше пространства на десктопах */
-    }
-}
-
 .brand-text {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -127,15 +73,6 @@ h1, h2, h3, h4, h5, h6 {
     color: white !important;
     transform: translateY(-2px);
 }
-
-/* Dropdown меню */
-.nav-item.dropdown .dropdown-menu {
-    left: auto;
-    right: 0;
-    min-width: 120px;
-}
-
-/* ===== ОСТАЛЬНЫЕ СТИЛИ ОСТАЮТСЯ ПРЕЖНИМИ ===== */
 
 /* ===== ГЛАВНЫЙ БАННЕР ===== */
 .hero-banner {
@@ -610,68 +547,15 @@ footer a:hover {
 
 /* ===== АДАПТИВНОСТЬ ===== */
 
-/* ОЧЕНЬ БОЛЬШИЕ ЭКРАНЫ (PC/Десктопы от 1400px) */
-@media (min-width: 1400px) {
-    .navbar .container {
-        padding: 0 60px;
-    }
-    
-    /* Главный баннер: более крупный текст для больших экранов */
-    .hero-banner h1 img {
-        max-width: 500px;
-    }
-    
-    .hero-banner .lead {
-        font-size: 2.2rem !important;
-    }
-    
-    .hero-banner .fs-5 {
-        font-size: 1.4rem !important;
-    }
-    
-    /* Галерея: увеличиваем высоту карусели */
-    .carousel-item img {
-        height: 650px;
-    }
-    
-    /* Карточки персонажей: немного увеличиваем на больших экранах */
-    .character-card img {
-        height: 350px;
-    }
-    
-    /* Постеры сериалов: увеличиваем на больших экранах */
-    .series-poster img {
-        max-height: 450px;
-    }
-    
-    /* Заголовки секций: увеличиваем шрифт */
-    .section-title {
-        font-size: 3.2rem;
-    }
-}
-
-/* Большие экраны (ноутбуки и десктопы от 1200px) */
+/* Большие экраны (ноутбуки и десктопы) */
 @media (min-width: 1200px) {
-    .navbar .container {
-        padding: 0 40px;
-    }
-    
     .series-poster img {
-        max-height: 350px;
-    }
-    
-    /* На больших экранах меню всегда справа */
-    .navbar-nav {
-        justify-content: flex-end;
+        max-height: 350px; /* Еще меньше на больших экранах */
     }
 }
 
 /* Стандартные ноутбуки (до 1200px) */
 @media (max-width: 1200px) {
-    .navbar .container {
-        padding: 0 30px;
-    }
-    
     .series-poster img {
         max-height: 380px;
     }
@@ -679,10 +563,6 @@ footer a:hover {
 
 /* Планшеты и мелкие ноутбуки (до 992px) */
 @media (max-width: 992px) {
-    .navbar .container {
-        padding: 0 20px;
-    }
-    
     .hero-banner {
         height: 70vh;
         min-height: 500px;
@@ -752,22 +632,6 @@ footer a:hover {
 
 /* Смартфоны (до 768px) */
 @media (max-width: 768px) {
-    .navbar .container {
-        padding: 0 15px;
-    }
-    
-    /* На мобильных логотип и меню занимают всю ширину */
-    .navbar-collapse {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .navbar-nav {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-    
     /* ГЛАВНЫЙ БАННЕР */
     .hero-banner {
         height: 80vh;
@@ -933,26 +797,6 @@ footer a:hover {
 
 /* Совсем маленькие экраны (до 576px) */
 @media (max-width: 576px) {
-    .navbar .container {
-        padding: 0 10px;
-    }
-    
-    /* На очень маленьких экранах меню становится вертикальным */
-    .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav-item {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .nav-link {
-        display: block;
-        margin: 5px 0;
-    }
-    
     .hero-banner h1 {
         font-size: 2rem;
     }
@@ -1180,5 +1024,6 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
 
