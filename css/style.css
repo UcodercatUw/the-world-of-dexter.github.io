@@ -1,4 +1,4 @@
-/* Основные стили для сайта "Мир Декстера" */
+/* Исправленный CSS для лучшего расположения элементов */
 
 /* ===== ГЛОБАЛЬНЫЕ СТИЛИ ===== */
 :root {
@@ -29,18 +29,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-/* ===== АНИМАЦИИ ===== */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* ===== НАВИГАЦИЯ ===== */
 .navbar {
     background-color: rgba(26, 26, 26, 0.98) !important;
@@ -50,12 +38,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 0;
 }
 
-.brand-text {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    color: white;
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
 }
 
 .nav-link {
@@ -65,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
     transition: all 0.3s ease;
     color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center;
 }
 
 .nav-link:hover,
@@ -83,39 +69,35 @@ h1, h2, h3, h4, h5, h6 {
                 url('../img/dexter.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
     width: 100%;
-    max-width: 900px;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .hero-banner h1 img {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 .hero-banner .lead {
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     font-size: 1.8rem !important;
-    animation: fadeInUp 1.2s ease;
+    margin-bottom: 20px;
 }
 
 .hero-banner .fs-5 {
     color: rgba(255, 255, 255, 0.9);
-    animation: fadeInUp 1.4s ease;
+    margin-bottom: 30px;
 }
 
 .btn-danger {
@@ -127,7 +109,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
     border-radius: 8px;
     transition: all 0.3s ease;
-    animation: fadeInUp 1.6s ease;
 }
 
 .btn-danger:hover {
@@ -143,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 20px;
     margin-bottom: 3rem;
     color: var(--text-dark);
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -169,13 +150,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #444;
-    text-align: justify;
-    padding: 0 20px;
+    text-align: center;
+    padding: 0 15px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* ===== СТАТИСТИКА ===== */
 .stats-row {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .stat-box {
@@ -186,12 +172,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid transparent;
     padding: 30px 20px;
     text-align: center;
-}
-
-.stat-box:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    border-color: var(--primary-red);
+    min-width: 200px;
+    margin: 10px;
 }
 
 .stat-number {
@@ -212,8 +194,42 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== РАЗДЕЛ "ПЕРСОНАЖИ" ===== */
 #characters {
-    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    background: white;
     padding: 80px 0;
+}
+
+#characters .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#characters .col {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    #characters .col {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    #characters .col {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    #characters .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .character-card {
@@ -222,583 +238,373 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transition: all 0.4s ease;
-    height: 100%;
-    background: var(--primary-red);
-    border: 2px solid transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.character-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-}
-
-.character-card img {
-    height: 320px;
+.character-card .card-img-top {
+    height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: center top;
-    transition: transform 0.6s ease;
-}
-
-.character-card:hover img {
-    transform: scale(1.08);
 }
 
 .character-card .card-body {
-    padding: 25px;
-    background: white;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .character-card .card-title {
     color: var(--primary-red);
     font-weight: 700;
     margin-bottom: 15px;
-    font-size: 1.5rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 .character-card .card-text {
     color: #555;
-    line-height: 1.7;
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex: 1;
 }
 
 .character-card .card-footer {
     background: linear-gradient(to right, #f8f9fa, #e9ecef);
     border-top: 1px solid #ddd;
-    padding: 15px 25px;
+    padding: 15px 20px;
     font-style: italic;
     color: #666;
 }
 
 /* ===== РАЗДЕЛ "СЕРИАЛЫ" ===== */
 #series {
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    background: #f8f9fa;
     padding: 80px 0;
 }
 
 .series-item {
-    background: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 100px;
-    transition: none;
-    border: none;
-    overflow: visible;
-    padding: 0;
-    max-width: 100%;
-    position: relative;
-}
-
-.series-item:last-child {
-    margin-bottom: 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 30px;
+    transition: transform 0.3s ease;
 }
 
 .series-item:hover {
-    box-shadow: none;
-    transform: none;
-    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .series-poster {
-    position: relative;
-    overflow: hidden;
-    height: auto;
-    min-height: auto;
-    display: block;
-    margin-bottom: 30px;
-    background: transparent;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .series-poster img {
-    width: auto;
-    height: auto;
-    max-height: 400px;
-    min-height: auto;
-    object-fit: contain;
-    object-position: center;
-    transition: transform 0.4s ease;
-    padding: 0;
     max-width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    display: block;
-}
-
-
-/* ИЗМЕНЕНИЕ: Контейнер для центрирования постера */
-.series-poster-container {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.series-info {
-    padding: 0;
     height: auto;
-    display: block;
-    max-width: 800px; /* Ограничиваем ширину текста */
-    margin: 0 auto; /* Центрируем текст */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .series-title {
     color: #222;
     margin-bottom: 15px;
-    font-size: 2.2rem;
-    line-height: 1.3;
-    border-bottom: 3px solid var(--primary-red);
-    padding-bottom: 15px;
-    text-align: center; /* Центрируем заголовок */
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .series-title .year {
     color: var(--primary-red);
-    font-weight: 700;
-    font-size: 1.8rem;
-    display: inline-block;
-    margin-left: 15px;
-    background: rgba(201, 48, 44, 0.1);
-    padding: 5px 15px;
-    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 10px;
 }
 
 .rating {
     display: flex;
     align-items: center;
-    justify-content: center; /* Центрируем рейтинг */
-    gap: 15px;
-    margin-bottom: 25px;
-    padding: 0;
-    background: transparent;
-    border-radius: 0;
-    border-left: none;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .stars {
     color: #ffc107;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .rating-text {
     color: #666;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .series-description {
-    font-size: 1.15rem;
-    line-height: 1.8;
+    font-size: 1.05rem;
+    line-height: 1.7;
     color: #444;
-    margin-bottom: 25px;
-    text-align: center; /* Центрируем описание */
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid var(--primary-red);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .series-meta {
-    text-align: center; /* Центрируем метки */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .series-meta .badge {
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 0.9rem;
     font-weight: 500;
     border-radius: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
 }
 
-.series-item:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--primary-red), transparent);
-}
 /* ===== РАЗДЕЛ "ГАЛЕРЕЯ" ===== */
 #gallery {
     background: white;
     padding: 80px 0;
-    position: relative;
 }
 
 #galleryCarousel {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-    border: 5px solid white;
-    position: relative;
-}
-
-.carousel-inner {
     border-radius: 15px;
-    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-item img {
-    height: 550px;
+    height: 500px;
     width: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
 .carousel-caption {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7));
-    border-radius: 10px;
-    padding: 20px 25px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    border-radius: 8px;
+    padding: 15px 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    bottom: 25px;
-    backdrop-filter: blur(5px);
+    bottom: 20px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .carousel-caption h4 {
     color: var(--primary-red);
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
 }
 
 .carousel-caption p {
     color: #eee;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0;
-}
-
-.carousel-indicators {
-    display: none !important;
 }
 
 /* ===== ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ ===== */
 .bg-dark {
     background: linear-gradient(135deg, #2c3e50, #34495e) !important;
-    padding: 80px 0;
+    padding: 60px 0;
+}
+
+.bg-dark .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-dark .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .bg-dark .col-lg-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        margin-bottom: 0;
+    }
 }
 
 .bg-dark h4 {
     color: white;
     border-bottom: 3px solid var(--primary-red);
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    font-size: 1.8rem;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .bg-dark ul li,
 .bg-dark ol li {
     color: #ddd;
-    margin-bottom: 12px;
-    padding-left: 10px;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .bg-dark p {
     color: #ccc;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ===== ФУТЕР ===== */
 .bg-black {
     background: linear-gradient(to right, #000, #222) !important;
-    padding: 60px 0 30px;
+    padding: 40px 0 20px;
     text-align: center;
 }
 
-footer h4, footer h5 {
+footer img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+footer h4 {
     color: white;
-    margin-bottom: 15px;
-    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 footer p {
     color: #ccc;
-    line-height: 1.7;
-    font-size: 1.05rem;
-}
-
-.text-muted-light {
-    color: #bbb !important;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-footer a:hover {
-    color: var(--primary-red);
-    text-decoration: underline;
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto 15px;
 }
 
 /* ===== АДАПТИВНОСТЬ ===== */
 
-/* Большие экраны (ноутбуки и десктопы) */
+/* Большие экраны (1200px и выше) */
 @media (min-width: 1200px) {
-    .series-poster img {
-        max-height: 350px; /* Еще меньше на больших экранах */
+    .container {
+        max-width: 1140px;
     }
 }
 
-/* Стандартные ноутбуки (до 1200px) */
-@media (max-width: 1200px) {
-    .series-poster img {
-        max-height: 380px;
-    }
-}
-
-/* Планшеты и мелкие ноутбуки (до 992px) */
-@media (max-width: 992px) {
+/* Средние экраны (992px - 1199px) */
+@media (max-width: 1199px) {
     .hero-banner {
-        height: 70vh;
         min-height: 500px;
-        background-attachment: scroll;
     }
     
-    .hero-banner h1 {
-        font-size: 3.2rem;
-    }
-    
-    /* ГАЛЕРЕЯ: Планшеты */
-    .carousel-item img {
-        height: 450px;
-    }
-    
-    .carousel-caption {
-        width: 95%;
-        padding: 18px 20px;
-        bottom: 20px;
-    }
-    
-    .carousel-caption h4 {
-        font-size: 1.5rem;
-    }
-    
-    .carousel-caption p {
-        font-size: 1rem;
-    }
-    
-    /* СЕРИАЛЫ: Планшеты */
-    .series-item {
-        margin-bottom: 80px;
-    }
-    
-    .series-title {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    
-    .series-title .year {
-        font-size: 1.5rem;
-        margin-left: 10px;
-    }
-    
-    .series-description {
-        font-size: 1.05rem;
-        padding: 15px;
-        text-align: center;
-    }
-    
-    .series-poster img {
-        max-height: 350px;
-        width: 100%;
-        background: transparent;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    .series-info {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    
-    .rating {
-        justify-content: center;
-    }
-}
-
-/* Смартфоны (до 768px) */
-@media (max-width: 768px) {
-    /* ГЛАВНЫЙ БАННЕР */
-    .hero-banner {
-        height: 80vh;
-        min-height: 450px;
-        background-attachment: scroll;
-        background-position: 75% center;
-    }
-
     .hero-banner h1 img {
         max-width: 250px;
     }
     
-    .hero-banner .lead {
-        font-size: 1.4rem !important;
-    }
-
-    /* ПЕРСОНАЖИ */
-    #characters .row.row-cols-1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #characters .col {
-        width: 50% !important;
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: 5px;
-    }
-
-    .character-card img {
-        height: 180px;
-        object-fit: cover;
-    }
-    
-    .character-card .card-body {
-        padding: 10px;
-    }
-
-    .character-card .card-title {
-        font-size: 1rem;
-        margin-bottom: 5px;
-    }
-
-    .character-card .card-text {
-        font-size: 0.85rem;
-        line-height: 1.3;
-    }
-
-    /* ЗАГОЛОВКИ СЕКЦИЙ */
     .section-title {
         font-size: 2.2rem;
     }
+}
+
+/* Планшеты (768px - 991px) */
+@media (max-width: 991px) {
+    body {
+        padding-top: 70px;
+    }
     
-    /* ГАЛЕРЕЯ: Большие телефоны */
-    .carousel-item img {
-        height: 350px;
+    .hero-banner {
+        min-height: 400px;
+        height: 60vh;
     }
     
-    /* КАРУСЕЛЬ */
-    .carousel-caption {
-        position: relative !important;
-        left: 0 !important;
-        transform: none !important;
-        width: 100% !important;
-        background: rgba(0, 0, 0, 0.9);
-        border-radius: 0 0 15px 15px;
-        bottom: 0 !important;
-        margin-top: 0;
-        padding: 20px;
-        border: none;
-        border-top: 2px solid var(--primary-red);
+    .hero-banner .lead {
+        font-size: 1.5rem !important;
     }
-
-    .carousel-caption h4 {
-        font-size: 1.3rem !important;
-        margin-bottom: 8px;
+    
+    .btn-danger {
+        padding: 12px 30px;
+        font-size: 1.1rem;
     }
-
-    .carousel-caption p {
-        font-size: 0.95rem !important;
-        line-height: 1.4;
-    }
-
-    /* СЕРИАЛЫ: Большие телефоны */
+    
     .series-item {
-        margin-bottom: 60px;
+        padding: 20px;
     }
     
-    /* На мобильных: всегда вертикальная структура */
-    .series-item .row {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .series-item .col-lg-6 {
-        width: 100%;
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-    
-    /* Центрируем постер */
-    .series-poster {
-        text-align: center;
-        margin: 0 auto 20px;
-        width: 100%;
-    }
-    
-    .series-poster img {
-        max-height: 300px;
-        width: auto;
-        max-width: 100%;
-        background: transparent;
-        box-shadow: none;
-        margin: 0 auto;
-        display: block;
-    }
-    
-    .series-title {
-        font-size: 1.6rem;
-        text-align: center;
-        padding-bottom: 10px;
-        margin-top: 10px;
-    }
-    
-    .series-title .year {
-        display: block;
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.3rem;
-    }
-    
-    .rating {
-        justify-content: center;
-        margin: 15px auto;
-    }
-    
-    .series-description {
-        font-size: 1rem;
-        padding: 15px;
-        margin-bottom: 15px;
-        text-align: center;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    }
-    
-    .series-meta {
-        text-align: center;
-    }
-    
-    .series-meta .badge {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-        margin: 5px;
-    }
-    
-    .series-item:not(:last-child)::after {
-        width: 90%;
-        bottom: -30px;
+    .carousel-item img {
+        height: 400px;
     }
 }
 
-/* Совсем маленькие экраны (до 576px) */
-@media (max-width: 576px) {
-    .hero-banner h1 {
+/* Смартфоны (576px - 767px) */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .hero-banner {
+        min-height: 300px;
+        height: 50vh;
+    }
+    
+    .hero-banner h1 img {
+        max-width: 200px;
+    }
+    
+    .hero-banner .lead {
+        font-size: 1.3rem !important;
+    }
+    
+    .section-title {
         font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .stat-box {
+        min-width: 160px;
+        padding: 20px 15px;
+    }
+    
+    .stat-number {
+        font-size: 2.8rem;
+    }
+    
+    .series-title {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .carousel-caption {
+        width: 95%;
+        padding: 12px 15px;
+        bottom: 15px;
+    }
+    
+    .carousel-caption h4 {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Маленькие смартфоны (до 575px) */
+@media (max-width: 575px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .hero-banner {
+        min-height: 250px;
+        height: 40vh;
+    }
+    
+    .hero-banner h1 img {
+        max-width: 150px;
     }
     
     .hero-banner .lead {
@@ -806,224 +612,127 @@ footer a:hover {
     }
     
     .btn-danger {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 10px 25px;
+        font-size: 1rem;
     }
     
-    /* СЕРИАЛЫ: Телефоны */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .stat-box {
+        min-width: 140px;
+        padding: 15px 10px;
+        margin: 5px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 1rem;
+    }
+    
+    .character-card .card-img-top {
+        height: 250px;
+    }
+    
     .series-item {
-        margin-bottom: 50px;
-    }
-    
-    .series-poster img {
-        max-height: 250px;
-        box-shadow: none;
-    }
-    
-    .series-title {
-        font-size: 1.4rem;
-    }
-    
-    .series-title .year {
-        font-size: 1.2rem;
-        margin-top: 5px;
-    }
-    
-    .series-description {
-        font-size: 0.95rem;
-        padding: 12px;
-        line-height: 1.6;
-        margin: 15px 0;
-    }
-    
-    .series-meta .badge {
-        padding: 6px 12px;
-        font-size: 0.85rem;
-        margin: 3px;
-    }
-    
-    .series-item:not(:last-child)::after {
-        width: 95%;
-        bottom: -25px;
-    }
-    
-    /* ГАЛЕРЕЯ: Телефоны */
-    .carousel-item img {
-        height: 300px;
-    }
-    
-    .carousel-caption {
         padding: 15px;
-    }
-    
-    .carousel-caption h4 {
-        font-size: 1.1rem !important;
-    }
-    
-    .carousel-caption p {
-        font-size: 0.85rem !important;
-    }
-    
-    #galleryCarousel {
-        border-width: 3px;
-    }
-}
-
-/* Для очень маленьких экранов (до 480px) */
-@media (max-width: 480px) {
-    /* СЕРИАЛЫ: Очень маленькие экраны */
-    .series-item {
-        margin-bottom: 40px;
-    }
-    
-    .series-poster img {
-        max-height: 220px;
+        margin-bottom: 30px;
     }
     
     .series-title {
         font-size: 1.3rem;
     }
     
-    .series-title .year {
-        font-size: 1.1rem;
-    }
-    
     .series-description {
-        font-size: 0.9rem;
-        padding: 10px;
-        line-height: 1.5;
-        margin: 10px 0;
+        font-size: 0.95rem;
     }
     
-    .rating {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 15px;
-        justify-content: center;
-    }
-    
-    .series-meta .badge {
-        padding: 5px 10px;
-        font-size: 0.8rem;
-        margin: 2px;
-    }
-    
-    .series-item:not(:last-child)::after {
-        bottom: -20px;
-    }
-    
-    /* ГАЛЕРЕЯ: Очень маленькие экраны */
     .carousel-item img {
         height: 250px;
     }
     
     .carousel-caption {
-        padding: 12px;
+        display: none;
     }
     
-    .carousel-caption h4 {
-        font-size: 1rem !important;
+    footer {
+        padding: 30px 0 15px;
     }
     
-    .carousel-caption p {
-        font-size: 0.8rem !important;
+    footer img {
+        max-width: 120px;
+    }
+    
+    footer h4 {
+        font-size: 1.3rem;
     }
 }
 
-/* Для экстремально маленьких экранов (до 360px) */
-@media (max-width: 360px) {
-    /* СЕРИАЛЫ: Экстремально маленькие экраны */
-    .series-item {
-        margin-bottom: 30px;
-    }
-    
-    .series-poster img {
-        max-height: 200px;
-    }
-    
-    .series-title {
-        font-size: 1.2rem;
-    }
-    
-    .series-title .year {
-        font-size: 1rem;
-    }
-    
-    .series-description {
-        font-size: 0.85rem;
-        padding: 8px;
-        margin: 8px 0;
-    }
-    
-    .series-meta .badge {
-        padding: 4px 8px;
-        font-size: 0.75rem;
-    }
-    
-    .stars {
-        font-size: 1.1rem;
-    }
-    
-    .rating-text {
-        font-size: 0.9rem;
-    }
-    
-    /* ГАЛЕРЕЯ: Экстремально маленькие экраны */
-    .carousel-item img {
-        height: 220px;
-    }
-    
-    .carousel-caption {
-        padding: 10px;
-    }
-    
-    .carousel-caption h4 {
-        font-size: 0.9rem !important;
-    }
-    
-    .carousel-caption p {
-        font-size: 0.75rem !important;
-    }
+/* Улучшения для центрирования элементов */
+.text-center {
+    text-align: center !important;
 }
 
-/* Для очень высоких но очень узких экранов (портретные смартфоны) */
-@media (max-width: 768px) and (orientation: portrait) {
-    .series-poster img {
-        max-height: 280px;
-    }
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-/* Для ландшафтных смартфонов */
-@media (max-width: 768px) and (orientation: landscape) {
-    .series-poster img {
-        max-height: 250px;
-    }
-    
-    .series-item {
-        margin-bottom: 50px;
-    }
-    
-    .series-poster {
-        max-width: 50%;
-        margin: 0 auto 20px;
-    }
+/* Улучшения для Flexbox выравнивания */
+.d-flex-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-/* Для планшетов в портретном режиме */
-@media (min-width: 577px) and (max-width: 768px) {
-    .series-poster img {
-        max-height: 350px;
-    }
-    
-    .series-title {
-        font-size: 1.7rem;
-    }
-    
-    .series-description {
-        font-size: 1.05rem;
-    }
+/* Улучшения для сетки Bootstrap */
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
 
+/* Исправление для карточек персонажей - одинаковая высота */
+.card.h-100 {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
 
+.card.h-100 .card-body {
+    flex: 1 0 auto;
+}
+
+/* Исправление для карусели */
+.carousel-indicators {
+    bottom: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+/* Исправление для навигации на мобильных */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(26, 26, 26, 0.98);
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        margin-top: 10px;
+    }
+}
