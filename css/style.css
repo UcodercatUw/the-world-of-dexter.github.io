@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Логотип - строго слева */
 .navbar-brand {
-    margin-right: 5;
+    margin-right: 0 !important;
     padding: 0 !important;
     display: flex;
     align-items: center;
@@ -76,8 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-nav {
-    margin-left: 5;
-    margin-right: 5;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     display: flex;
     justify-content: flex-end;
     width: auto;
@@ -1180,4 +1180,5 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
