@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== РАЗДЕЛ "ПЕРСОНАЖИ" ===== */
 #characters {
-    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    background: linear-gradient(to bottom, #ffffff, #d9d9d9);
     padding: 80px 0;
 }
 
@@ -1024,5 +1024,6 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
 
