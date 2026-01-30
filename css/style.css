@@ -483,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ ===== */
 .bg-dark {
-    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    background: linear-gradient(135deg, #2c3e50, #34495e), url('../img/dexter.jpg') !important; 
     padding: 80px 0;
 }
 
@@ -1024,6 +1024,7 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
 
 
