@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
 .hero-banner h1 img {
     max-width: 400px;
     width: 100%;
-    height: auto;
     margin-bottom: 20px;
 }
 
@@ -1025,6 +1024,7 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
 
 
