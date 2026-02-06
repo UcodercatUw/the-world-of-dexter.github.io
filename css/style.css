@@ -41,6 +41,42 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* ===== ЛОГОТИП В ГЛАВНОМ БАННЕРЕ ===== */
+.hero-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 150px; /* Минимальная высота для контейнера */
+}
+
+.hero-logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .hero-logo-container {
+        min-height: 120px;
+    }
+    
+    .hero-logo {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo-container {
+        min-height: 100px;
+    }
+    
+    .hero-logo {
+        max-width: 250px;
+    }
+}
+
 /* ===== НАВИГАЦИЯ ===== */
 .navbar {
     background-color: rgba(26, 26, 26, 0.98) !important;
@@ -99,22 +135,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
 }
 
-.hero-banner h1 {
-    max-width: 400px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
 .hero-banner .lead {
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     font-size: 1.8rem !important;
     animation: fadeInUp 1.2s ease;
+    margin-top: 20px; /* Фиксированный отступ сверху */
 }
 
 .hero-banner .fs-5 {
     color: rgba(255, 255, 255, 0.9);
     animation: fadeInUp 1.4s ease;
+    margin-bottom: 30px; /* Фиксированный отступ снизу */
 }
 
 .btn-danger {
@@ -569,10 +601,6 @@ footer a:hover {
         background-attachment: scroll;
     }
     
-    .hero-banner h1 {
-        font-size: 3.2rem;
-    }
-    
     /* ГАЛЕРЕЯ: Планшеты */
     .carousel-item img {
         height: 450px;
@@ -638,10 +666,6 @@ footer a:hover {
         min-height: 450px;
         background-attachment: scroll;
         background-position: 75% center;
-    }
-
-    .hero-banner h1 img {
-        max-width: 250px;
     }
     
     .hero-banner .lead {
@@ -1024,17 +1048,3 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
