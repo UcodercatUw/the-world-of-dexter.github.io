@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
 }
 
-.hero-banner h1 img {
+.hero-banner h1 {
     max-width: 400px;
     width: 100%;
     margin-bottom: 20px;
@@ -1024,6 +1024,7 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
 
 
