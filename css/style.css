@@ -712,42 +712,40 @@ footer a:hover {
         font-size: 2.2rem;
     }
     
-    /* ===== ИСПРАВЛЕНИЕ ДЛЯ ГАЛЕРЕИ НА ТЕЛЕФОНАХ ===== */
-    /* ГАЛЕРЕЯ: Телефоны */
-    .carousel-item {
-        position: relative;
-    }
-    
+    /* ГАЛЕРЕЯ: Телефоны - ТОЧНО КАК НА ПК */
     .carousel-item img {
         height: 350px;
     }
     
-    /* Убираем d-none d-md-block, чтобы текст был виден всегда */
+    /* Убираем только класс d-none, чтобы текст был видим, 
+       но сохраняем все остальные стили как на ПК */
     .carousel-caption {
         display: block !important;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        bottom: 15px;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
-        border-radius: 8px;
-        padding: 12px 15px;
-        border: 1px solid var(--primary-red);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)) !important;
+        border-radius: 10px !important;
+        padding: 20px 25px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 90% !important;
+        bottom: 25px !important;
+        backdrop-filter: blur(5px) !important;
+        text-align: center !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        position: absolute !important;
     }
 
     .carousel-caption h4 {
+        color: var(--primary-red) !important;
+        margin-bottom: 10px !important;
         font-size: 1.2rem !important;
-        margin-bottom: 5px;
-        color: var(--primary-red);
+        font-weight: 600 !important;
     }
 
     .carousel-caption p {
+        color: #eee !important;
         font-size: 0.9rem !important;
-        line-height: 1.4;
-        margin-bottom: 0;
-        color: #fff;
+        line-height: 1.5 !important;
+        margin-bottom: 0 !important;
     }
 
     /* СЕРИАЛЫ: Большие телефоны */
@@ -882,25 +880,25 @@ footer a:hover {
         bottom: -25px;
     }
     
-    /* ГАЛЕРЕЯ: Маленькие телефоны */
+    /* ГАЛЕРЕЯ: Маленькие телефоны - ТОЧНО КАК НА ПК */
     .carousel-item img {
         height: 280px;
     }
     
     .carousel-caption {
-        padding: 10px 12px;
-        bottom: 10px;
-        width: 92%;
+        padding: 15px 20px !important;
+        bottom: 15px !important;
+        width: 92% !important;
     }
     
     .carousel-caption h4 {
-        font-size: 1rem !important;
-        margin-bottom: 4px;
+        font-size: 1.1rem !important;
+        margin-bottom: 8px !important;
     }
     
     .carousel-caption p {
-        font-size: 0.8rem !important;
-        line-height: 1.3;
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
     }
     
     #galleryCarousel {
@@ -952,24 +950,24 @@ footer a:hover {
         bottom: -20px;
     }
     
-    /* ГАЛЕРЕЯ: Очень маленькие экраны */
+    /* ГАЛЕРЕЯ: Очень маленькие экраны - ТОЧНО КАК НА ПК */
     .carousel-item img {
         height: 240px;
     }
     
     .carousel-caption {
-        padding: 8px 10px;
-        bottom: 8px;
+        padding: 12px 15px !important;
+        bottom: 12px !important;
     }
     
     .carousel-caption h4 {
-        font-size: 0.9rem !important;
-        margin-bottom: 3px;
+        font-size: 1rem !important;
+        margin-bottom: 6px !important;
     }
     
     .carousel-caption p {
-        font-size: 0.7rem !important;
-        line-height: 1.2;
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
     }
 }
 
@@ -1011,25 +1009,25 @@ footer a:hover {
         font-size: 0.9rem;
     }
     
-    /* ГАЛЕРЕЯ: Экстремально маленькие экраны */
+    /* ГАЛЕРЕЯ: Экстремально маленькие экраны - ТОЧНО КАК НА ПК */
     .carousel-item img {
         height: 200px;
     }
     
     .carousel-caption {
-        padding: 6px 8px;
-        bottom: 5px;
-        width: 94%;
+        padding: 8px 12px !important;
+        bottom: 8px !important;
+        width: 94% !important;
     }
     
     .carousel-caption h4 {
-        font-size: 0.8rem !important;
-        margin-bottom: 2px;
+        font-size: 0.9rem !important;
+        margin-bottom: 4px !important;
     }
     
     .carousel-caption p {
-        font-size: 0.65rem !important;
-        line-height: 1.1;
+        font-size: 0.7rem !important;
+        line-height: 1.2 !important;
     }
 }
 
@@ -1055,14 +1053,14 @@ footer a:hover {
         margin: 0 auto 20px;
     }
     
-    /* ГАЛЕРЕЯ: Ландшафтная ориентация */
+    /* ГАЛЕРЕЯ: Ландшафтная ориентация - ТОЧНО КАК НА ПК */
     .carousel-item img {
         height: 300px;
     }
     
     .carousel-caption {
-        padding: 10px 15px;
-        bottom: 10px;
+        padding: 15px 20px !important;
+        bottom: 15px !important;
     }
     
     .carousel-caption h4 {
@@ -1088,4 +1086,5 @@ footer a:hover {
         font-size: 1.05rem;
     }
 }
+
 
